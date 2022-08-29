@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multiplication Table</title>
+    <link rel="icon" type="image/x-icon" href="main-img.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Multiplication Table Generator </h1>
+    <hr>
+    <!-- Input to indicate table size -->
+    <div class="inputs-container"> 
+    <h2> Select your preferences </h2>
+    <section class="table-inputs"> 
+        <label for="size-input"> Multiplication table size: </label>
+        <input type='number' name="size-input" id="size-input" max=35 min=1 value='10'/>
+    </section>
+    <section class="radio-inputs"> 
+        <input type="checkbox" id='highlight-squares' name="squares" value="true" checked>
+        <label for='highlight-squares'> Highlight square values </label>
+        <input type="checkbox" id="random-colors" name="colors" value="true" checked>
+        <label for='random-colors'>Random colored tables </label> 
+    </section>
+    <section class="buttons"> 
+        <button onclick="generateTable()" id="generate-table-btn"> Generate table! </button>
+        <button onclick="clearTables()"> Clear </button>
+    </section>
+    <section> 
+        <h3 id="table-msg"> <!-- Short message that is generated after the table is created--></h3>
+    </section>
+    </div>
+    <div id="tables"> <!-- Div that will contain the table that is generated--></div>
+    <script src="script.js"> </script>
+</body>
+</html>
