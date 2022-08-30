@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@800&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    height: 1000px;
+}
+
+.city{
+    background-size: cover;
+    padding: 1.5rem;
+    border: 2.5px solid white;
+    background-color: lightcoral;
+}
+
+.city:nth-child(even){
+    background-color: lightblue;
+}
+
+.city:hover{
+    transition: 1s ease;
+    transform:scale(1.05);
+}
+h3{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+h2{
+    text-shadow: 2px 1px black;
+    color: rgb(255, 230, 2);
+    font-size: 25px;
+    font-style: bolder;
+}
+h1{
+    color: beige;
+    text-shadow: 2px 2px black;
+    font-family: 'Silkscreen', cursive;
+    font-size: 55px;
+    text-align: center;
+}
+
+#subtitle{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
