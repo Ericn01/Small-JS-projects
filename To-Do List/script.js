@@ -4,9 +4,13 @@ function displayItem(){
     if (!contains(listItem)){
         toDoItems.push(listItem)
         for (let i = 0; i < toDoItems.length; i++){
-            document.getElementById('list').innerHTML += '<ul> ' + toDoItems[i] + '</ul>'; 
+            document.getElementById('list-items').innerHTML += '<ul> ' + toDoItems[i] + '</ul>'; 
         }
     };
+}
+
+function clear(){
+    document.getElementById('list-items').innerHTML = "";
 }
 // Checks to see if given element is in the array.
 function contains(elem){

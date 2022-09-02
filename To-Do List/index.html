@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1> Create a to-do list!</h1>
     <label for="to-do-item"> Add a to-do item </label>
     <input type="text" id="to-do-item" name="to-do-item" placeholder="Buy groceries">
     <button onclick="displayItem()"> Add Item </button>
-    <div id="list"> </div>
+    <button onclick="clear()"> Clear list </button>
+    <div id="list-items"> </div>
     <script src="script.js"> </script>
 </body>
 </html>

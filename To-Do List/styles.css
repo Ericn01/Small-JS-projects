@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Raleway:wght@800&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#to-do-item{
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 10rem;
+    background: none;
+}
+
+#to-do-item:focus{
+    outline: none;
+}
+
+button{
+    padding: 5px;
+    background-color: rgb(10, 30, 200);
+    color: snow;
+    border-radius: 3px;
+    border: 0.3px solid white;
+}
+
+button:hover{
+    cursor: pointer;
+
+}
