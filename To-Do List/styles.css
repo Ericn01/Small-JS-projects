@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Raleway:wght@800&display=swap');
+
+:root{
+    --background: #363537; /* Body background color */
+    --highlights: #ed7d3a; /* Used for highlights and other areas */
+    --card-items: #ef2d56; /* Transition color for certain elements */
+}
 body{
-    background-color: black;
-    color: white;
+    background-color: var(--background);
+    color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 }
 
 #to-do-item{
-    color: white;
+    color: var(--whitesmoke);
     border: none;
     border-bottom: 1px solid white;
     width: 10rem;
@@ -19,16 +25,18 @@ body{
 }
 
 button{
+    margin-right: 3rem;
+    width: 5rem;
+    cursor: pointer;
     padding: 5px;
-    background-color: rgb(10, 30, 200);
+    background-color: var(--card-items);
     color: snow;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 0.3px solid white;
 }
 
 button:hover{
-    cursor: pointer;
-
+    background-color: var(--highlights);
 }
 
 ol{
@@ -36,8 +44,9 @@ ol{
 }
 
 h1{
+    font-size: 3rem;
     text-align: center;
-    text-shadow: 1px 1px lightblue;
+    text-shadow: 2px 2px black;
 }
 
 .input-section{
@@ -46,3 +55,22 @@ h1{
     border: 2px solid red;
     width: 300px auto;
 }
+
+#list-items{
+    text-shadow: 1px 1px black;
+    box-shadow: 4px 4px black;
+    padding: 5rem;
+    width: 50% auto;
+    margin: 10rem;
+    background: linear-gradient(var(--card-items), var(--highlights));
+}
+p{
+    margin: 2rem;
+}
+
+label{
+    font-size: 1.2rem;
+}
+/* Play a little celebratory animation after a task has been completed */
+
+/* Counter for number of tasks finished in a day? -> Would reset at local time 12am for user */

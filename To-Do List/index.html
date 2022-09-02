@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-do list builder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1> Create a to-do list!</h1>
-    <label for="to-do-item"> Add a to-do item </label>
-    <input type="text" id="to-do-item" name="to-do-item" placeholder="Buy groceries">
-    <button onclick="displayItem()"> Add Item </button>
-    <button onclick="clear()"> Clear list </button>
+    <section class="input-section">
+        <p>
+            <label for="to-do-item"> Add a to-do item: </label>
+            <input type="text" id="to-do-item" name="to-do-item" placeholder="Task name">
+        </p>
+        <p>
+            <button onclick="displayItem()"> Add Item </button>
+            <button onclick="clearList()"> Clear list </button>
+        </p>
+    </section>
     <div id="list-items"> </div>
     <script src="script.js"> </script>
 </body>

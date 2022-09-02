@@ -10,12 +10,10 @@ function displayItem(){
 }
 
 // Clears the to do list 
-function clear(){
-    document.getElementById('list-items').innerHTML = '';
-    toDoItemsHistory.forEach(listItem =>
-    {
-        listItem = "";
-    })
+function clearList(){
+    let items = document.getElementById('list-items');
+    items.innerHTML = "";
+    toDoItemsHistory = []; // resets the array to be empty
 }
 
 // Checks to see if given element is in the item list array.
