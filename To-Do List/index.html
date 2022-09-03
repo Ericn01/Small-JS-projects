@@ -12,9 +12,9 @@
     <header> 
         <nav class="project-view-switch"> 
             <ul class="links">
-                <li class="transition-link" id="current-item"> <a href="../To-Do List/index.html"> To-Do List </li>
-                <li class="transition-link"> <a href="../Multiplication Table Generator/index.html"> Multiplication Table Generator </li>
-                <li class="transition-link"> <a href="../World Clock/index.html"> World Clock </li>
+                <li class="transition-link" id="current-item"> <a href="../To-Do List/index.html"> To-Do List </a> </li>
+                <li class="transition-link"> <a href="../Multiplication Table Generator/index.html"> Multiplication Table Generator </a>  </li>
+                <li class="transition-link"> <a href="../World Clock/index.html"> World Clock </a>  </li> 
             </ul>
         </nav> 
     </header>
@@ -23,9 +23,10 @@
     <section class="input-section">
         <label for="to-do-item"> Add a to-do item: </label>
         <input type="text" id="to-do-item" name="to-do-item" placeholder="Task name">
+        <br><br>
         <button onclick="displayItem()"> Add Task </button>
         <button onclick="clearList()"> Clear Task List </button>
-        <div id="list-items"> </div>
+        <div id="list-items"></div>
     </section>
     <script src="script.js"> </script>
 </body>

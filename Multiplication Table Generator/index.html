@@ -7,8 +7,18 @@
     <title> Multiplication Table</title>
     <link rel="icon" type="image/x-icon" href="main-img.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../nav.css"> <!-- Top bar navigation stylesheet -->
 </head>
 <body>
+    <header> 
+        <nav class="project-view-switch"> 
+            <ul class="links">
+                <li class="transition-link"> <a href="../To-Do List/index.html"> To-Do List </a>  </li>
+                <li class="transition-link" id="current-item"> <a href="../Multiplication Table Generator/index.html"> Multiplication Table Generator  </a> </li>
+                <li class="transition-link"> <a href="../World Clock/index.html"> World Clock </a> </li>
+            </ul>
+        </nav> 
+    </header>
     <h1> Multiplication Table Generator </h1>
     <hr>
     <!-- Input to indicate table size -->
@@ -18,7 +28,7 @@
         <label for="size-input"> Multiplication table size: </label>
         <input type='number' name="size-input" id="size-input" max=35 min=1 value='10'/>
     </section>
-    <section class="radio-inputs"> 
+    <section class="checkbox-inputs"> 
         <input type="checkbox" id='highlight-squares' name="squares" value="true" checked>
         <label for='highlight-squares'> Highlight square values </label>
         <input type="checkbox" id="random-colors" name="colors" value="true" checked>

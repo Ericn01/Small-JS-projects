@@ -1,0 +1,34 @@
+.project-view-switch{
+    margin: none;
+    width: 100%;
+    color: black;
+}
+.links{
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+.transition-link{
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.transition-link:hover{
+    transform:scale(1.07);
+    transition: 0.3s;
+    color: lightcoral;
+    background-color:rgba(54, 53, 55, 0.5)
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#current-item{
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}

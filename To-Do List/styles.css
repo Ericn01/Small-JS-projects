@@ -26,12 +26,13 @@ body{
 
 button{
     margin-right: 3rem;
-    width: 8rem;
+    width: 10rem;
     height: 2.5rem;
     cursor: pointer;
     padding: 5px;
     background-color: var(--card-items);
-    color: snow;
+    color: white;
+    text-shadow: 1px 1px black;
     border-radius: 5px;
     border: 0.3px solid white;
 }
@@ -51,7 +52,8 @@ h1{
 }
 
 .input-section{
-    margin: 10rem;
+    text-align:center;
+    margin: 5rem;
     align-items: center;
     width: 300px auto;
 }
@@ -61,7 +63,7 @@ h1{
     box-shadow: 4px 4px black;
     padding: 5rem;
     width: 50% auto;
-    margin: 10rem;
+    margin: 5rem;
     background: linear-gradient(var(--card-items), var(--highlights));
 }
 p{
