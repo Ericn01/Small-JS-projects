@@ -26,7 +26,8 @@ body{
 
 button{
     margin-right: 3rem;
-    width: 5rem;
+    width: 8rem;
+    height: 2.5rem;
     cursor: pointer;
     padding: 5px;
     background-color: var(--card-items);
@@ -52,7 +53,6 @@ h1{
 .input-section{
     margin: 10rem;
     align-items: center;
-    border: 2px solid red;
     width: 300px auto;
 }
 
@@ -71,6 +71,7 @@ p{
 label{
     font-size: 1.2rem;
 }
+
 /* Play a little celebratory animation after a task has been completed */
 
 /* Counter for number of tasks finished in a day? -> Would reset at local time 12am for user */
